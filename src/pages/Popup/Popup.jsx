@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from '../../assets/img/logo.svg';
-import Greetings from '../../containers/Greetings/Greetings';
-import './Popup.css';
+import './Popup.scss';
 
 const Popup = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Popup/Popup.jsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-        <Greetings />
-      </header>
-    </div>
+    <main className="h-screen w-screen border-[0.3rem] border-white bg-[#020202]">
+      <div className="flex h-full w-full flex-col items-center justify-center">
+        <div className="form__group">
+          <input
+            className="form__field"
+            type="text"
+            name="message"
+            placeholder="Message"
+            required
+          />
+          <label htmlFor="message" className="form__label">
+            Message
+          </label>
+        </div>
+      </div>
+    </main>
   );
 };
 
