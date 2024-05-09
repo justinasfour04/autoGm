@@ -5,7 +5,6 @@ $gray: #9b9b9b;
 .form__group {
   position: relative;
   padding: 1.5rem 0 0;
-  width: 75%;
 }
 
 .form__field {
@@ -27,9 +26,9 @@ $gray: #9b9b9b;
   }
 
   &:placeholder-shown ~ .form__label {
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: text;
-    top: 5rem;
+    top: 3rem;
   }
 }
 
