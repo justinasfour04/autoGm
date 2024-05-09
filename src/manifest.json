@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Chrome Extension for the arena",
+  "name": "Arena Easy Message",
   "description": "A chrome extension for the arena to automatically message all your chats GM",
   "options_page": "options.html",
   "permissions": [
@@ -15,14 +15,18 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icon-34.png"
+    "default_icon": "icon32.png"
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
   "icons": {
-    "128": "icon-128.png"
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
+  
   "content_scripts": [
     {
       "matches": [
@@ -43,8 +47,8 @@
     {
       "resources": [
         "content.styles.css",
-        "icon-128.png",
-        "icon-34.png"
+        "icon128.png",
+        "icon32.png"
       ],
       "matches": []
     }
